@@ -10,6 +10,7 @@ unsigned int xorshift(void){
 }
 
 int  main(){
+	//int n=pow(2, 26);// stream of 2^26 bits
 	//Create TestU01 PRNG object for our generator
 	unif01_Gen* gen = unif01_CreateExternGenBits("Xorshift 32", xorshift);
 	//Run the tests.
